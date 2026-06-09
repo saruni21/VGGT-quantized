@@ -81,7 +81,7 @@ python vggt_visualize_output.py \
 # Open pointcloud.ply in Meshlab, Blender, or CloudCompare
 ```
 
-## ⚙️ Command Reference
+## Command Reference
 
 ### `vggt_quantize_4bit.py` — Inference Script
 
