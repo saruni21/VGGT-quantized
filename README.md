@@ -34,7 +34,7 @@ cp vggt-quantized/*.py vggt/
 pip install torch torchvision numpy Pillow tqdm viser trimesh matplotlib
 ```
 
-## 🎯 Quick Start
+## Quick Start
 
 ### Option 1: Full Pipeline (Inference + Viser Viewer)
 
@@ -127,7 +127,7 @@ python vggt_visualize_output.py \
 | `--use-pointmap` | Use point map branch | `False` |
 
 
-## 🔧 How Quantization Works
+## How Quantization Works
 
 This project implements **custom block-wise 4-bit quantization** in pure PyTorch (no `bitsandbytes` dependency, which is CUDA-only).
 
@@ -168,7 +168,7 @@ Quantization introduces minimal quality degradation for 3D reconstruction tasks:
 - **Depth maps**: Visually indistinguishable
 - **Point clouds**: Sub-millimeter error on typical scenes
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### "Input image height not a multiple of patch height 14"
 
@@ -201,19 +201,19 @@ Viser binds to `0.0.0.0` by default. If you can't connect:
 # Then visit: http://localhost:8080
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
 **Note**: VGGT itself is licensed by Meta (see [facebookresearch/vggt](https://github.com/facebookresearch/vggt)). The commercial-use checkpoint (`VGGT-1B-Commercial`) requires separate approval. This quantization code is independent and does not redistribute model weights.
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [VGGT](https://github.com/facebookresearch/vggt) by Wang et al. (CVPR 2025 Best Paper)
 - [Viser](https://github.com/nerfstudio-project/viser) by the Nerfstudio team
 - PyTorch quantization community
 
-## 📬 Citation
+## Citation
 
 If you use this code in your research, please cite both VGGT and this quantization work:
 
