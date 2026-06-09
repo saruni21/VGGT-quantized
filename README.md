@@ -54,7 +54,7 @@ Then open `http://localhost:8080` in your browser.
 
 ```bash
 # Step 1: Run quantized inference
-python vggt_quantize_4bit_mac.py \
+python vggt_quantize_4bit.py \
     --quantize \
     --images ./your_photos/ \
     --output ./results/ \
@@ -83,7 +83,7 @@ python vggt_visualize_output.py \
 
 ## ⚙️ Command Reference
 
-### `vggt_quantize_4bit_mac.py` — Inference Script
+### `vggt_quantize_4bit.py` — Inference Script
 
 | Flag | Description | Default |
 |------|-------------|---------|

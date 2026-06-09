@@ -17,7 +17,7 @@ Requirements:
     pip install torch torchvision numpy Pillow huggingface_hub
 
 Usage:
-    python vggt_quantize_4bit_mac.py --images /path/to/images/ --output /path/to/output/
+    python vggt_quantize_4bit.py --images /path/to/images/ --output /path/to/output/
 
 """
 
@@ -598,16 +598,16 @@ def main():
         epilog="""
 Examples:
   # Quantize and save model
-  python vggt_quantize_4bit_mac.py --quantize --save-model ./vggt_4bit.pt
+  python vggt_quantize_4bit.py --quantize --save-model ./vggt_4bit.pt
 
   # Run inference with quantized model
-  python vggt_quantize_4bit_mac.py --load-model ./vggt_4bit.pt --images ./my_images/ --output ./results/
+  python vggt_quantize_4bit.py --load-model ./vggt_4bit.pt --images ./my_images/ --output ./results/
 
   # Run on Mac with MPS (Apple Silicon)
-  python vggt_quantize_4bit_mac.py --device mps --images ./my_images/
+  python vggt_quantize_4bit.py --device mps --images ./my_images/
 
   # Run on CPU with 4-bit quantization
-  python vggt_quantize_4bit_mac.py --device cpu --quantize --images ./my_images/
+  python vggt_quantize_4bit.py --device cpu --quantize --images ./my_images/
         """
     )
 

@@ -55,7 +55,7 @@ except ImportError:
 
 
 # =============================================================================
-# 4-bit Quantization Utilities (copied from vggt_quantize_4bit_mac.py)
+# 4-bit Quantization Utilities (copied from vggt_quantize_4bit.py)
 # =============================================================================
 
 class QuantizedLinear4Bit(torch.nn.Module):
