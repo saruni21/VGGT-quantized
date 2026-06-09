@@ -228,4 +228,4 @@ If you use this code in your research, please cite both VGGT and this quantizati
 
 ---
 
-**Made with ❤️ for making 3D vision accessible to everyone.**
+**Made with ❤️**
